@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard AdminSite</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Aside Section -->
+    <aside >
+        <div class="head">
+            <i class="fa-solid fa-face-smile"></i>
+            AdminSite
+        </div>
+        <ul class="lists">
+            <li>
+                <a class="active" href="#">
+                    <i class="fa-solid fa-shapes"></i>
+                    Dashboard
+                </a>
+            </li>
+            <span data-text="MAIN">MAIN</span>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-inbox"></i>
+                    Elements
+                    <i class="fa-solid fa-angle-right right-iocn"></i>
+                </a>
+                <ul class="drop-down">
+                    <li><a href="#">Alert</a></li>
+					<li><a href="#">Badges</a></li>
+					<li><a href="#">Breadcrumbs</a></li>
+					<li><a href="#">Button</a></li>
+                </ul>
+            </li>
+            <li><a href="#">
+                <i class="fa-solid fa-chart-line"></i>
+                Charts
+            </a></li>
+            <li><a href="#">
+                <i class="fa-solid fa-arrow-up-short-wide"></i>
+                Widgets
+            </a></li>
+            <span data-text="TABLE AND FORMS">TABLE AND FORMS</span>
+            <li><a href="#">
+                <i class="fa-solid fa-table"></i>
+                Tables
+            </a></li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file-waveform"></i>
+                    Forms
+                    <i class="fa-solid fa-angle-right right-iocn"></i>
+                </a>
+                <ul class="drop-down">
+                    <li><a href="#">Basic</a></li>
+					<li><a href="#">Select</a></li>
+					<li><a href="#">Checkbox</a></li>
+					<li><a href="#">Radio</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="ads">
+            <a href="#">Upgrade</a>
+            <p>Become a <span>PRO</span> member and enjoy <span>All Features</span></p>
+        </div>
+    </aside>
+    <!-- End Aside Section -->
+
+    <!-- Start Navbar Section -->
+    <nav>
+        <div class="container">
+            <div class="left">
+                <span id="menu-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                <div class="search-input">
+                    <input type="search" placeholder="Search...">
+                    <span class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                </div>
+            </div>
+            <div class="right">
+                <div class="inbox">
+                    <span class="notification"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg></span>
+                    <span class="messages"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64z"/></svg></span>
+                </div>
+                <div class="avatar" id="nav-avatar">
+                    <img src="./alan.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar Section -->
+
+    
+
+    <main>
+        <h1>Dashboard</h1>
+        <div class="links"><a href="#" class="active">Home</a> / <a href="#">Dashboard</a></div>
+        <div class="cards">
+            <div class="card">
+                <div class="count">
+                    <span class="count">155</span>
+                    <i class="fa-solid fa-arrow-trend-down down"></i>
+                </div>
+                <span class="title">Traffic</span>
+                <div class="progress-bar">
+                    <div class="progress-line">
+                        <span></span>
+                    </div>
+                    <span class="avarage">40%</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="count">
+                    <span class="count">234</span>
+                    <i class="fa-solid fa-arrow-trend-up up"></i>
+                </div>
+                <span class="title">Sales</span>
+                <div class="progress-bar">
+                    <div class="progress-line">
+                        <span></span>
+                    </div>
+                    <span class="avarage">60%</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="count">
+                    <span class="count">455</span>
+                    <i class="fa-solid fa-arrow-trend-up up"></i>
+                </div>
+                <span class="title">Pageviews</span>
+                <div class="progress-bar">
+                    <div class="progress-line">
+                        <span></span>
+                    </div>
+                    <span class="avarage">30%</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="count">
+                    <span class="count">235</span>
+                    <i class="fa-solid fa-arrow-trend-down down"></i>
+                </div>
+                <span class="title">Visitors</span>
+                <div class="progress-bar">
+                    <div class="progress-line">
+                        <span></span>
+                    </div>
+                    <span class="avarage">80%</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="chart-container box">
+                <div class="head">
+                    <span class="title">Sales Report</span>
+                    <div class="menu">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <ul class="menu-links">
+                            <li><a href="#">Edite</a></li>
+                            <li><a href="#">Save</a></li>
+                            <li><a href="#">Remove</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="chart"></div>
+            </div>
+            <div class="chat-container box">
+                <div class="head">
+                    <span class="title">Chatbox</span>
+                    <div class="menu">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <ul class="menu-links">
+                            <li><a href="#">Edite</a></li>
+                            <li><a href="#">Save</a></li>
+                            <li><a href="#">Remove</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chat-box">
+                    <p class="day"><span>Today</span></p>
+                    <div class="msg">
+                        <img src="./alan.jpg" alt="">
+                        <div class="chat">
+                            <div class="profile">
+                                <span class="username">Alan</span>
+                                <span class="time">18:06</span>
+                            </div>
+                            <p>Hello</p>
+                        </div>
+                    </div>
+                    <div class="msg me">
+                        <div class="chat">
+                            <div class="profile">
+                                <span class="time">18:06</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero blanditiis sequi reiciendis autem earum consequatur placeat assumenda repellat, ea corporis harum tempore eaque sapiente magnam dignissimos aperiam nobis repudiandae pariatur?</p>
+                        </div>
+                    </div>
+                    <div class="msg me">
+                        <div class="chat">
+                            <div class="profile">
+                                <span class="time">18:06</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero blanditiis sequi reiciendis.</p>
+                        </div>
+                    </div>
+                    <div class="msg me">
+                        <div class="chat">
+                            <div class="profile">
+                                <span class="time">18:06</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <form action="#">
+                    <input type="text" placeholder="Type...">
+                    <button class="send"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
